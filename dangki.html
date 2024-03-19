@@ -1,0 +1,266 @@
+<!-- 
+  Sinh viên thực hiện: Trần Phước Thọ B2003809
+  Ngày hoàn thành 30/11/2022  
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="shortcut icon" href="img/iconM.png" />
+    <link rel="stylesheet" href="trangchu.css" />
+    <link rel="stylesheet" href="dangki.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page_dangky">
+    <header class="page__header">
+      <nav class="nav__header">
+        <section class="menu">
+          <section class="logo">
+            <a href="trangchu.html"
+              ><img
+                class="link__img_logo"
+                src="img/Mercedes-Can-Tho-Logo.png"
+                alt="Mrecedes_logo"
+            /></a>
+          </section>
+          <ul class="ul__header">
+            <li class="li__header">
+              <a class="header__link" href="trangchu.html">TRANG CHỦ</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="banggiaxe.html">BẢNG GIÁ XE</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="tintuc.html">TIN TỨC</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="lienhe.html">LIÊN HỆ</a>
+            </li>
+          </ul>
+          <section class="boxicon__header">
+            <span class="span__header">
+              <a href="cart.html" class="shopcar">
+                <i class="bx bxs-car"><b>Cart</b></i>
+              </a>
+            </span>
+
+            <span class="span__header">
+              <a href="dangki.html" class="user">
+                <i class="bx bx-user-circle"><b>User</b></i>
+              </a>
+            </span>
+          </section>
+        </section>
+      </nav>
+    </header>
+    <!-- <div id="wrap">
+    <div id="header"> <img
+        src="https://media.vov.vn/sites/default/files/styles/large/public/2021-11/2021-mercedes-star-in-ring-100th-anniversary-10.jpg"
+        class="img1"> <br>
+      <h2 class="h2">Thế giới xe</h2>
+      <form>
+        <input type="text" name="search" placeholder="Tìm bài viết, dòng xe...">
+      </form>
+    </div>
+    <div id="menu">
+      <ul>
+        <h3>
+          <li> <a href="index.html" id="a1"> Trang chủ</a></li>
+          <li> <a href="tin.html" id="a1"> Tin xe </a> </li>
+          <li> <a href="tinvideo.html" id="a1"> Tin Video </a> </li>
+          <li> <a href="dangki.html" id="a1"> Diễn đàn </a> </li>
+          <li> <a href="gopy.html" id="a1"> Góp ý</a> </li>
+        </h3>
+      </ul>
+    </div> -->
+
+    <div id="contend">
+      <br />
+      <div class="divtk"><strong>HÃY LÀ THÀNH VIÊN CỦA MERCEDES </strong></div>
+      <!-- <div class="divtk2">
+        Bạn đã là thành viên ? <a href="Dangnhap.html">Đăng nhập</a> ngay.
+      </div> -->
+      <br />
+      <br />
+      <div id="contend1">
+        <form
+          action="Dangnhap.html"
+          method="post"
+          name="dangky"
+          onSubmit="return KiemTra()"
+        >
+          Họ và tên :(*) <br />
+          <label for="txtHoTen"></label>
+          <input name="txtHoTen" type="text" id="txtHoTen" maxlength="30" />
+          <br />
+          Email:(*) <br />
+          <label for="txtEmail"></label>
+          <input type="text" name="txtEmail" id="txtEmail" />
+          <br />
+          Ngày sinh :<br />
+          Ngày:
+          <label for="lstNgay"></label>
+          <select name="lstNgay" id="lstNgay">
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="9">10</option>
+            <option value="9">11</option>
+            <option value="9">12</option>
+            <option value="9">13</option>
+            <option value="9">14</option>
+            <option value="9">15</option>
+            <option value="9">16</option>
+            <option value="9">17</option>
+            <option value="9">18</option>
+            <option value="9">19</option>
+            <option value="9">20</option>
+            <option value="9">21</option>
+            <option value="9">22</option>
+            <option value="9">23</option>
+            <option value="9">24</option>
+            <option value="9">25</option>
+            <option value="9">26</option>
+            <option value="9">27</option>
+            <option value="9">28</option>
+            <option value="9">29</option>
+            <option value="9">30</option>
+            <option value="9">31</option>
+          </select>
+
+          Tháng:
+          <label for="lstThang"></label>
+          <select name="lstThang" id="lstNgay">
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+
+          Năm:
+          <input
+            name="txtNam"
+            type="text"
+            size="3"
+            style="width: 70px"
+            style="height: 10px"
+          />
+          <br />
+          Giới tính <br />
+          <label for="lstGioiTinh"></label>
+          <select name="lstGioiTinh" id="lstGioiTinh">
+            <option value="1">Nam</option>
+            <option value="2">Nữ</option>
+          </select>
+          <br />
+          Tên đăng nhập :(*)<br />
+          <label for="txtTenDN"></label>
+          <input name="txtTenDN" type="text" id="txtTenDN" size="20" />
+          <br />
+          Mật khẩu :(*) <br />
+          <label for="txtMatKhau"></label>
+          <input name="txtMatKhau" type="password" id="txtMatKhau" size="20" />
+          <br />
+          Nhập lại mật khẩu:(*)<br />
+          <label for="txtNhapLaiMK"></label>
+          <input type="password" name="txtNhapLaiMK" id="txtNhapLaiMK" />
+          <br />
+          <br />
+          <input
+            type="submit"
+            name="btnDangKy"
+            id="btnDangKy"
+            value="Đăng ký"
+          />
+          <br />Hoặc đăng kí với :<br />
+          <input type="reset" name="o" id="o" value="Đăng kí bằng Gmail" />
+        </form>
+        <img src="img/dangky/fb.png" width="150" height="41" />
+        <img src="img/dangky/gmail.png" width="150" height="40" />
+      </div>
+      <div class="divtk2">
+        Bạn đã là thành viên ? <a href="Dangnhap.html">Đăng nhập</a> ngay.
+      </div>
+    </div>
+    <!-- </div>
+      <div id="contend2">
+        <img
+          src="https://media.vov.vn/sites/default/files/styles/large/public/2021-11/2021-mercedes-star-in-ring-100th-anniversary-10.jpg"
+          width="250" height="250">
+        <BR>
+        <h2>Một tài khoản. Hoạt động trên mọi sản phẩm và dịch vụ của chúng tôi.<h2>
+      </div> -->
+
+    <footer class="page__footer">
+      <article class="footer__article">
+        <section class="footer__section">
+          <ul class="footer__ul">
+            <li class="footer__li">
+              <h3 class="footer__title"><b>Mercedes Cần Thơ</b></h3>
+              <p>Hotline: <a style="color: red">0369739792</a></p>
+              <p>
+                Địa chỉ: Trường CNTT & TT, đường 3 tháng 2,<br />
+                Cần Thơ University, Xuân Khánh, Ninh Kiều, Cần Thơ
+              </p>
+            </li>
+            <li class="footer__li" style="text-align: center">
+              <h3 class="footer__title"><b>Liên Hệ</b></h3>
+              <a
+                href="https://www.facebook.com/profile.php?id=100039788240371"
+                class="footer__a"
+                style="color: #1877f2"
+              >
+                <i class="bx bxl-facebook-square"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/raikage122/"
+                class="footer__a"
+                style="color: #e4405f"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/NguynMi62591622"
+                class="footer__a"
+                style="color: #1da1f2"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li class="footer__li">
+              <h1 class="footer__title"><b>Dịch Vụ & Chính Sách</b></h1>
+              <p>Bảo dưỡng xe</p>
+              <p>Phụ kiện</p>
+              <p>Dịch vụ sửa chữa</p>
+              <p>Mua xe trả góp</p>
+              <p>Chính sách bảo mật</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </footer>
+  </body>
+</html>

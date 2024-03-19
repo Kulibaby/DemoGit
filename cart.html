@@ -1,0 +1,143 @@
+<!-- 
+  Sinh viên thực hiện: Nguyễn Minh Tuấn b2012278
+  Ngày hoàn thành 30/11/2022  
+  link: https://mercedescanthovn.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <link rel="shortcut icon" href="img/iconM.png" />
+    <link rel="stylesheet" href="trangchu.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <header class="page__header">
+      <nav class="nav__header">
+        <section class="menu">
+          <section class="logo">
+            <a href="trangchu.html"
+              ><img
+                class="link__img_logo"
+                src="img/Mercedes-Can-Tho-Logo.png"
+                alt="Mrecedes_logo"
+            /></a>
+          </section>
+          <ul class="ul__header">
+            <li class="li__header">
+              <a class="header__link" href="trangchu.html">TRANG CHỦ</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="banggiaxe.html">BẢNG GIÁ XE</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="tintuc.html">TIN TỨC</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="lienhe.html">LIÊN HỆ</a>
+            </li>
+          </ul>
+          <section class="boxicon__header">
+            <span class="span__header">
+              <a href="" class="shopcar">
+                <i class="bx bxs-car"><b>Cart</b></i>
+              </a>
+            </span>
+
+            <span class="span__header">
+              <a href="DangNhap.html" class="user">
+                <i class="bx bx-user-circle"><b>User</b></i>
+              </a>
+            </span>
+          </section>
+        </section>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <section class="main__warpper">
+        <ul class="main__ul">
+          <li class="main__li product__li">
+            
+          </li>
+          <li class="main__li">
+            <div class="main__info">
+              <section class="info">
+                <table>
+                  <tr>
+                    <th><p style="font-size: 25px">Tổng chi phí:</p>
+                    <th><p style="font-size: 20px">3.099.000.000</p></th></th>
+                  </tr>
+                </table>
+              </section>
+              <button onclick="myFunction()" style="padding: 10px">
+                Đăng ký mua
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page__footer">
+      <article class="footer__article">
+        <section class="footer__section">
+          <ul class="footer__ul">
+            <li class="footer__li">
+              <h3 class="footer__title"><b>Mercedes Cần Thơ</b></h3>
+              <p>Hotline: <a style="color: red">0369739792</a></p>
+              <p>
+                Địa chỉ: Trường CNTT & TT, đường 3 tháng 2,<br />
+                Cần Thơ University, Xuân Khánh, Ninh Kiều, Cần Thơ
+              </p>
+            </li>
+            <li class="footer__li" style="text-align: center">
+              <h3 class="footer__title"><b>Liên Hệ</b></h3>
+              <a
+                href="https://www.facebook.com/profile.php?id=100039788240371"
+                class="footer__a"
+                style="color: #1877f2"
+              >
+                <i class="bx bxl-facebook-square"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/raikage122/"
+                class="footer__a"
+                style="color: #e4405f"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/NguynMi62591622"
+                class="footer__a"
+                style="color: #1da1f2"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li class="footer__li">
+              <h1 class="footer__title"><b>Dịch Vụ & Chính Sách</b></h1>
+              <p>Bảo dưỡng xe</p>
+              <p>Phụ kiện</p>
+              <p>Dịch vụ sửa chữa</p>
+              <p>Mua xe trả góp</p>
+              <p>Chính sách bảo mật</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+  <script>
+    window.addEventListener("load", showCart, false);
+  </script>
+</html>

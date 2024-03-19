@@ -1,0 +1,71 @@
+/* Sinh viên thực hiện: Trần Thanh Mới B2014760
+Ngày hoàn thành 30/11/2022   */
+
+.page_banggiaxe {
+  margin: 0 0;
+  font: 1.2em Helvetica, arial, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header-cell" "main-cell"
+    "footer-cell";
+}
+.link_image_logo {
+  grid-area: logo-cell;
+  display: grid;
+  background-color: #000000;
+  height: 90px;
+  width: 250px;
+  margin-left: 125px;
+}
+.page_banggiaxe_header {
+  display: grid;
+  grid-template-areas: "logo-cell nav-cell";
+  grid-area: header-cell;
+  height: 90px;
+  border: 1px solid white;
+  background-color: #000000;
+}
+
+.header_nav {
+  grid-area: nav-cell;
+  height: fit-content;
+  margin: 3px;
+  display: flex;
+  margin-right: 110px;
+}
+.nav_link {
+  margin: 10px;
+  margin-top: 35px;
+  height: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Times New Roman";
+}
+.page_main_banggiaxe {
+  grid-area: main-cell;
+  display: grid;
+  grid-template-areas: auto;
+  justify-content: center;
+}
+.main_table1 {
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main_table,
+.tr_th,
+.tr_th1 {
+  border: solid 1px black;
+  width: 350px;
+  height: 30px;
+  padding: 15px;
+}
+.tr_th1 {
+  text-align: left;
+}
+.page_footer_banggiaxe {
+  grid-area: footer-cell;
+  background-color: #000000;
+  color: #ffffff;
+}

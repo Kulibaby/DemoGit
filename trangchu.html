@@ -1,0 +1,553 @@
+<!-- 
+  Sinh viên thực hiện: Nguyễn Minh Tuấn b2012278
+  Ngày hoàn thành 30/11/2022  
+  link: https://mercedescanthovn.com/
+  Thực hiện vẽ layout: Nguyễn Minh Tuấn b2012278
+  Thực hiện powerpoint: Trần Thanh Mới B2014760
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="shortcut icon" href="img/iconM.png" />
+    <link rel="stylesheet" href="trangchu.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <!-- Phan dau trang "page__header"  -->
+    <header class="page__header">
+      <nav class="nav__header">
+        <section class="menu">
+          <section class="logo">
+            <a href="trangchu.html"
+              ><img
+                class="link__img_logo"
+                src="img/Mercedes-Can-Tho-Logo.png"
+                alt="Mrecedes_logo"
+            /></a>
+          </section>
+          <ul class="ul__header">
+            <li class="li__header">
+              <a class="header__link" href="trangchu.html">TRANG CHỦ</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="banggiaxe.html">BẢNG GIÁ XE</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="tintuc.html">TIN TỨC</a>
+            </li>
+            <li class="li__header">
+              <a class="header__link" href="lienhe.html">LIÊN HỆ</a>
+            </li>
+          </ul>
+          <section class="boxicon__header">
+            <span class="span__header">
+              <a href="cart.html" class="shopcar">
+                <i class="bx bxs-car"><b>Cart</b></i>
+              </a>
+            </span>
+
+            <span class="span__header">
+              <a href="DangNhap.html" class="user">
+                <i class="bx bx-user-circle"><b>User</b></i>
+              </a>
+            </span>
+          </section>
+          <span class="span__none">
+            <a href="">
+              <i class="bx bx-menu" style="color: #fff"></i>
+            </a>
+          </span>
+        </section>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <!-- Slidesshow Container web trang chủ -->
+      <article class="slideshow__container">
+        <!-- Slideshow 1 -->
+        <section class="mySlides fade">
+          <img
+            class="img__slide"
+            src="img/slideshow/oto4.jpg"
+            alt="slideshow 1"
+            style="width: 100%"
+          />
+        </section>
+        <!-- Slideshow 2 -->
+        <section class="mySlides fade">
+          <img
+            class="img__slide"
+            src="img/slideshow/oto2.jpg"
+            alt="slideshow 2"
+            style="width: 100%"
+          />
+        </section>
+
+        <section class="" style="text-align: center">
+          <span class="dot" onclick="curentSlide(0)"></span>
+          <span class="dot" onclick="curentSlide(1)"></span>
+        </section>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </article>
+      <!-- Product Card nội dung chính của web -->
+      <article class="page__card" id="">
+        <!-- Phần 1: MERCEDES GLC -->
+        <section class="headline">
+          <h1 class="card__line">MERCEDES GLC</h1>
+          <hr style="width: 100%" />
+          <hr style="width: 100%" />
+        </section>
+        <ul class="card__ul">
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="" class="">
+                  <img
+                    class="card__img"
+                    src="img//product_card/GLC-300-4MATIC-Mercedes-Benz-1-247x247.png"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="#" class="card__name">
+                  MERCEDES GLC 300 4MATIC COUPE’ 2022
+                </a>
+                <section class="card__price">3.099.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="#" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/GLC-300-280x280.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="#" class="card__name"> Mercedes GLC 300 4Matic </a>
+                <section class="card__price">2.569.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="#" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/GLC-200-4Matic-280x280.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="#" class="card__name"> MERCEDES GLC 200 4MATIC </a>
+                <section class="card__price">2.129.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="#" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/GLC-200-280x280.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="#" class="card__name"> MERCEDES GLC 200 </a>
+                <section class="card__price">1.859.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+        </ul>
+        <!-- Phần 2: MERCEDES C-CLASS -->
+        <section class="headline">
+          <h1 class="card__line">MERCEDES C-CLASS</h1>
+          <hr style="width: 100%" />
+          <hr style="width: 100%" />
+        </section>
+        <ul class="card__ul">
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="#" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/p2_1.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MERCEDES C300 AMG</a>
+                <section class="card__price">2.089.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="#" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/p2_2.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MERCEDES C200 EXCLUSIVE 2022</a>
+                <section class="card__price">1.669.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="#" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/p2_3.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MERCEDES-BENZ C180 AMG 2022</a>
+                <section class="card__price">1.499.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+        </ul>
+        <!-- Phần 3: MERCEDES S-CLASS -->
+        <section class="headline">
+          <h1 class="card__line">MERCEDES S-CLASS</h1>
+          <hr style="width: 100%" />
+          <hr style="width: 100%" />
+        </section>
+        <ul class="card__ul">
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/s_1.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MERCEDES S450 LUXURY</a>
+                <section class="card__price">5.549.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/s_2.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MERCEDES S450L</a>
+                <section class="card__price">5.059.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+        </ul>
+        <!-- Phần 4: MERCEDES MAYBACH -->
+        <section class="headline">
+          <h1 class="card__line">MERCEDES MAYBACH</h1>
+          <hr style="width: 100%" />
+          <hr style="width: 100%" />
+        </section>
+        <ul class="card__ul">
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/maybach1.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MAYBACH S650</a>
+                <section class="card__price">14.499.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/maybach2.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MAYBACH S560</a>
+                <section class="card__price">11.099.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+          <li class="card__li">
+            <section class="card__item">
+              <section class="card__top">
+                <a href="" class="">
+                  <img
+                    class="card__img"
+                    src="img/product_card/maybach3.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="cart.html" class="card__buy">Buy</a>
+              </section>
+              <section class="card__info">
+                <a href="" class="card__name">MAYBACH S450</a>
+                <section class="card__price">7.469.000.000<u>đ</u></section>
+              </section>
+            </section>
+          </li>
+        </ul>
+      </article>
+
+      <article class="page__news">
+        <section class="news__line">
+          <h1>
+            <a href="" class="newsline">Tin tức</a>
+          </h1>
+        </section>
+        <ul class="news__ul">
+          <li class="news__li">
+            <section class="news__item">
+              <section class="news__top">
+                <a href="tintuc.html" class="news__a">
+                  <img class="news__img" src="img/tintuc/news1.jpg" alt="" />
+                </a>
+              </section>
+              <section class="news__info">
+                <a href="" class="news__name"
+                  ><b>Giới thiệu GLB SUV 7 chỗ hoàn toàn mới</b></a
+                >
+                <p>
+                  Với 7 chỗ ngồi rộng rãi, gói thiết kế AMG Line, cùng nhiều
+                  tính năng[...]
+                </p>
+              </section>
+            </section>
+          </li>
+          <li class="news__li">
+            <section class="news__item">
+              <section class="news__top">
+                <a href="tintuc.html" class="news__a">
+                  <img class="news__img" src="img/tintuc/news2.jpg" alt="" />
+                </a>
+              </section>
+              <section class="news__info">
+                <a href="" class="news__name"
+                  ><b
+                    >Khởi công dự án Showroom Mercedes-Benz Haxaco Cần Thơ</b
+                  ></a
+                >
+                <p>
+                  Ngày 25/2/2022, tại TP. Cần Thơ, Công ty cổ phần Dịch vụ Ô tô
+                  Hàng[...]
+                </p>
+              </section>
+            </section>
+          </li>
+          <li class="news__li">
+            <section class="news__item">
+              <section class="news__top">
+                <a href="tintuc.html" class="news__a">
+                  <img class="news__img" src="img/tintuc/news3.jpg" alt="" />
+                </a>
+              </section>
+              <section class="news__info">
+                <a href="" class="news__name"
+                  ><b>Ưu Đãi Mercedes GLC200, GLC300, E180</b></a
+                >
+                <p>
+                  KHỞI ĐẦU MAY NẮM – KHỞI SẮC HÀNH TRÌNH Sở hữu xe sang Mercedes
+                  chỉ[...]
+                </p>
+              </section>
+            </section>
+          </li>
+        </ul>
+      </article>
+
+      <article class="page__service">
+        <section class="service__line">
+          <h1><a href="" class="serviceline">DỊCH VỤ CỦA CHÚNG TÔI</a></h1>
+        </section>
+        <ul class="service__ul">
+          <li class="service__li">
+            <section class="service__item">
+              <section class="service__top">
+                <a href="" class="service__a">
+                  <img class="service__img" src="img/dichvu/dv1.png" alt="" />
+                </a>
+              </section>
+              <section class="service__document">
+                <p><b>Bảo dưỡng</b></p>
+                <p>
+                  Trong quá trình vận hành, nhiều chi tiết trên xe bị mài mòn
+                  hoặc hư hỏng. Việc bảo dưỡng định kỳ sẽ đảm bảo từng chi tiết
+                  cấu thành nói riêng và tổng thể chiếc xe nói chung luôn được
+                  vận hành tốt.
+                </p>
+              </section>
+            </section>
+          </li>
+          <li class="service__li">
+            <section class="service__item">
+              <section class="service__top">
+                <a href="" class="service__a">
+                  <img class="service__img" src="img/dichvu/dv2.png" alt="" />
+                </a>
+              </section>
+              <section class="service__document">
+                <p><b>Bảo hành</b></p>
+                <p>
+                  Chế độ bảo hành bắt đầu được tính ngay kể từ thời điểm xe mới
+                  được giao. Trong thời hạn xe được bảo hành, chúng tôi đảm bảo
+                  sẽ sửa chữa hoặc thay thế phụ tùng tốt nhất cho khách hàng.
+                </p>
+              </section>
+            </section>
+          </li>
+          <li class="service__li">
+            <section class="service__item">
+              <section class="service__top">
+                <a href="" class="service__a">
+                  <img class="service__img" src="img/dichvu/dv3.png" alt="" />
+                </a>
+              </section>
+              <section class="service__document">
+                <p><b>Tài chính bảo hiểm</b></p>
+                <p>
+                  Chúng tôi hợp tác với các ngân hàng và đơn vị tài chính lớn,
+                  đơn vị bảo hiểm ô tô uy tín, nhằm mang đến cho bạn một trải
+                  nghiệm nhẹ nhàng, thoải mái. Giúp khách hàng có sự lựa chọn
+                  chính xác nhất.
+                </p>
+              </section>
+            </section>
+          </li>
+          <li class="service__li">
+            <section class="service__item">
+              <section class="service__top">
+                <a href="" class="service__a">
+                  <img class="service__img" src="img/dichvu/dv4.png" alt="" />
+                </a>
+              </section>
+              <section class="service__document">
+                <p>
+                  Sau một thời gian sử dụng xe Mercedes bạn có như cầu nâng cấp
+                  nên dòng xe khác. Mercedes là dòng xe sang và bạn có thể tìm
+                  các diễn đàn để rao bán. Giá trị của những chiếc xe cũ vẫn rất
+                  cao.
+                </p>
+              </section>
+            </section>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <footer class="page__footer">
+      <article class="footer__article">
+        <section class="footer__section">
+          <ul class="footer__ul">
+            <li class="footer__li">
+              <h3 class="footer__title"><b>Mercedes Cần Thơ</b></h3>
+              <p>Hotline: <a style="color: red">0369739792</a></p>
+              <p>
+                Địa chỉ: Trường CNTT & TT, đường 3 tháng 2,<br />
+                Cần Thơ University, Xuân Khánh, Ninh Kiều, Cần Thơ
+              </p>
+            </li>
+            <li class="footer__li" style="text-align: center">
+              <h3 class="footer__title"><b>Liên Hệ</b></h3>
+              <a
+                href="https://www.facebook.com/profile.php?id=100039788240371"
+                class="footer__a"
+                style="color: #1877f2"
+              >
+                <i class="bx bxl-facebook-square"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/raikage122/"
+                class="footer__a"
+                style="color: #e4405f"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/NguynMi62591622"
+                class="footer__a"
+                style="color: #1da1f2"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li class="footer__li">
+              <h1 class="footer__title"><b>Dịch Vụ & Chính Sách</b></h1>
+              <p>Bảo dưỡng xe</p>
+              <p>Phụ kiện</p>
+              <p>Dịch vụ sửa chữa</p>
+              <p>Mua xe trả góp</p>
+              <p>Chính sách bảo mật</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </footer>
+    <script src="slideshow.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

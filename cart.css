@@ -1,0 +1,72 @@
+/* Sinh viên thực hiện: Nguyễn Minh Tuấn b2012278
+Ngày hoàn thành 30/11/2022   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page__main {
+  width: 100%;
+  display: block;
+  min-height: 60vh;
+}
+
+.main__warpper {
+  max-width: 1500px;
+}
+
+.main__warpper.main__empty {
+  display: none;
+}
+
+.main__ul {
+  list-style: none;
+  display: grid;
+  grid: auto / auto auto;
+  justify-content: space-evenly;
+}
+
+.main__li {
+  padding: 60px 60px;
+}
+
+.main__card {
+  margin-bottom: 15px;
+  width: 700px;
+  display: flex;
+  border: 2px black solid;
+  background-color: grey;
+  position: relative;
+}
+
+.main__text {
+  padding: 10px;
+}
+
+.main__text p {
+  padding: 5px 0;
+}
+
+.exit {
+  position: absolute;
+  right: 15px;
+  font-size: 25px;
+  color: #333333;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.exit:hover {
+  color: red;
+}
+
+.main__info {
+  padding-top: 130px;
+}
+
+.info {
+  padding: 10px 0;
+}

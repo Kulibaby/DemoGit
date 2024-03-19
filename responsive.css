@@ -1,0 +1,68 @@
+/* Sinh viên thực hiện: Nguyễn Minh Tuấn b2012278
+Ngày hoàn thành 30/11/2022   */
+
+/* PC */
+@media (min-width: 64em) {
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  .nav__header .menu {
+    padding: 0;
+    margin-left: 0;
+  }
+  .menu .ul__header {
+    display: none;
+  }
+  .boxicon__header {
+    display: none;
+  }
+  .span__none {
+    display: unset;
+    margin-right: 30px;
+    font-size: 25px;
+  }
+  .img__slide {
+    height: unset;
+  }
+  .mySlides {
+    display: block;
+  }
+  .headline {
+    text-align: center;
+  }
+  .card__img {
+    width: 100%;
+  }
+  .card__ul .card__li {
+    flex-basis: 0;
+  }
+  .card__ul {
+    display: unset;
+  }
+  .card__top a.card__buy {
+    bottom: 0;
+  }
+  .news__li {
+    flex-basis: unset;
+    padding-bottom: 20px;
+  }
+  .service__ul {
+    display: unset;
+  }
+  .service__li {
+    padding-bottom: 20px;
+  }
+  .page__footer {
+    height: unset;
+  }
+  .footer__ul {
+    display: unset;
+    justify-content: unset;
+    padding: 0;
+  }
+}
